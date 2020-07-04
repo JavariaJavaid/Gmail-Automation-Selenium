@@ -34,7 +34,7 @@ public class GmailTest1 {
 		
 		driver.get(URL);
 		
-		driver.findElement(By.id("identifierId")).sendKeys("javariatest@gmail.com");
+		driver.findElement(By.id("identifierId")).sendKeys("Test@gmail.com");//Create new gmail account Replace Test@gmail.com
 		driver.findElement(By.xpath("//span[text()='Next']")).click();
 		
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -42,7 +42,7 @@ public class GmailTest1 {
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		driver.findElement(By.name("password")).sendKeys("Javaxxxx1234");
+		driver.findElement(By.name("password")).sendKeys("TestPassword");
 		driver.findElement(By.xpath("//span[text()='Next']")).click();
 		
 		driver.findElement(By.xpath("//div[contains(text(),'Compose')]")).click();
